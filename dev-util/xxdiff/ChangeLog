@@ -1,0 +1,9 @@
+# ChangeLog for dev-util/xxdiff
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  01 Jan 2011; sgustafso(*at*)gmail(*dot*)com ChangeLog:
+  Copied/updated build from gentoo sources (build was killed in gentoo; no 
+  maintainer, qt4, unicoded, etc.)
+  New ebuild is a live mercurial build with working qt4 support
+
