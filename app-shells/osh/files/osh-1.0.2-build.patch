@@ -1,0 +1,19 @@
+*** setup.py	Thu Aug 26 12:55:36 2010
+--- newsetup.py	Sun Jan  2 14:20:47 2011
+***************
+*** 57,63 ****
+                  'osh.external',
+                  'osh.external.tpg'],
+      data_files = [('/usr/bin', ['bin/osh', 'bin/remoteosh']),
+!                   ('/usr/share/osh', ['bin/remoteinstall.py', '../osh-%s.tar.gz' % VERSION]),
+                    ('/usr/share/osh/scripts', scripts),
+                    ('/usr/share/osh/test', test),
+                    ('/usr/share/doc/osh', doc),
+--- 57,63 ----
+                  'osh.external',
+                  'osh.external.tpg'],
+      data_files = [('/usr/bin', ['bin/osh', 'bin/remoteosh']),
+!                   ('/usr/share/osh', ['bin/remoteinstall.py']),
+                    ('/usr/share/osh/scripts', scripts),
+                    ('/usr/share/osh/test', test),
+                    ('/usr/share/doc/osh', doc),
