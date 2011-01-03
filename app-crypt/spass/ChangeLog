@@ -1,0 +1,9 @@
+# ChangeLog for app-crypt/spass
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  03 Jan 2011; sgustafso(*at*)gmail(*dot*)com ChangeLog:
+  Create new ebuild
+  Haven't very carefully inspect build deps, but looks tame enough from a 
+  brief skim over the includes.
+

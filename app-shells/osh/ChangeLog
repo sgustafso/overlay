@@ -1,0 +1,7 @@
+# ChangeLog for app-shells/osh
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  03 Jan 2011; sgustafso(*at*)gmail(*dot*)com ChangeLog:
+  Created new osh build and added patch to fix setup.py
+

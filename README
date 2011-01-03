@@ -1,1 +1,5 @@
-Overlay for various things
+Gentoo overlay for various builds.
+
+app-crypt/spass
+app-shells/osh
+dev-util/xxdiff
