@@ -1,0 +1,10 @@
+# ChangeLog for dev-python/couchapp
+# Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*couchapp-9999 (15 Jan 2011)
+
+  15 Jan 2011; sgustafso(*at*)gmail(*dot*)com +couchapp-9999.ebuild:
+  First iteration of a live git ebuild for couchapp
+  Expect dependencies/keywords to be poorly tracked at this point
+
