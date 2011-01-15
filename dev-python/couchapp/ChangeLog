@@ -2,6 +2,10 @@
 # Copyright 1999-2011 Gentoo Foundation; Distributed under the GPL v2
 # $Header: $
 
+  15 Jan 2011; sgustafso(*at*)gmail(*dot*)com couchapp-9999.ebuild:
+  Cleaned up ebuild dependencies. Note syntax used in current couchapp 
+  version makes it incompatible with Python 3+
+
 *couchapp-9999 (15 Jan 2011)
 
   15 Jan 2011; sgustafso(*at*)gmail(*dot*)com +couchapp-9999.ebuild:

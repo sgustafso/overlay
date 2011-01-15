@@ -1,8 +1,9 @@
-# Copyright 2010-2011 Stephen Gustafson
+# Copyright 1999-2011 Stephen Gustafson
 
 EAPI="3"
-PYTHON_DEPEND="2"
+PYTHON_DEPEND="2:2.5"
 SUPPORT_PYTHON_ABIS="1"
+RESTRIC_PYTHON_ABIS="3.*"
 
 inherit git distutils
 
@@ -14,10 +15,11 @@ SRC_URI=""
 
 LICENSE="Apache-2.0"
 SLOT="0"
-KEYWORDS="~alpha x86 amd64"
+KEYWORDS="~x86"
 IUSE=""
 
-RDEPEND="dev-db/couchdb"
+RDEPEND="dev-db/couchdb
+	>=dev-python/restkit-2.3.0"
 DEPEND="${RDEPEND}"
 
 src_unpack()
