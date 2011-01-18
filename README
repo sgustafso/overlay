@@ -2,4 +2,5 @@ Gentoo overlay for various builds.
 
 app-crypt/spass
 app-shells/osh
+dev-python/couchapp
 dev-util/xxdiff
