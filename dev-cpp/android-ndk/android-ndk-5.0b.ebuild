@@ -1,4 +1,4 @@
-# Copyright 2011-2011 Stephen Gustafson
+# Copyright 2011 Stephen Gustafson
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=3
