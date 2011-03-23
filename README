@@ -1,11 +1,11 @@
 Gentoo overlay for various builds.
 
 ***
-media-gfx/cinepaint
-dev-python/couchapp
-sci-mathematics/libnewmat
-sci-mathematics/armadillo
-dev-util/xxdiff
-dev-cpp/android-ndk
 app-crypt/spass
 app-shells/osh
+dev-cpp/android-ndk
+dev-python/couchapp
+dev-util/xxdiff
+media-gfx/cinepaint
+sci-mathematics/armadillo
+sci-mathematics/libnewmat

@@ -1,6 +1,5 @@
-# Copyright 1999-2011 Gentoo Foundation
+# Copyright 2011 Stephen Gustafson
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/xxdiff/Attic/xxdiff-3.2.ebuild,v 1.9 2008/03/18 19:57:26 armin76 dead $
 
 EAPI=3
 inherit eutils
