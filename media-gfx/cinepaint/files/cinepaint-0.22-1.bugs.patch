@@ -1,0 +1,160 @@
+*** plug-ins/bracketing_to_hdr/br_core/br_Image.cpp	Sun Mar 20 22:01:36 2011
+--- plug-ins/bracketing_to_hdr/br_core/br_Image.fix.cpp	Sun Mar 20 22:02:46 2011
+***************
+*** 25,30 ****
+--- 25,31 ----
+    Referenzaehlende Image-Klasse.
+  */
+  #include <iostream>
++ #include <string.h>                 // stlren, strcpy
+  #include <cmath>                    // pow()
+  
+  #include "br_types.hpp"             // ImageID
+*** plug-ins/bracketing_to_hdr/br_core/ResponseSolver.hpp	Mon Dec 18 09:41:35 2006
+--- plug-ins/bracketing_to_hdr/br_core/ResponseSolver.fix.hpp	Sun Mar 20 22:22:22 2011
+***************
+*** 34,39 ****
+--- 34,40 ----
+  
+  
+  #include <fstream>
++ #include <string.h>             // strlen
+  #include "TNT/tnt_misc.hpp"     // proof_least_square_fit()
+  #include "TNT/tnt_stopwatch.hpp"
+  #include "TNT/jama_qr.hpp"      // JAMA::QR
+*** plug-ins/collect/collect.cpp	Fri Mar 30 02:11:33 2007
+--- plug-ins/collect/collect.fix.cpp	Sun Mar 20 22:37:42 2011
+***************
+*** 301,307 ****
+              return -1;
+  
+            // renaming the layer to the original filename
+!           gimp_layer_set_name (layers[0], strrchr(fc->value(1),'/')+1);
+            GPrecisionType image_base_prec = gimp_drawable_precision (layers[0]);
+            int base_gray = gimp_drawable_gray (layers[0]);
+  
+--- 301,307 ----
+              return -1;
+  
+            // renaming the layer to the original filename
+!           gimp_layer_set_name (layers[0], (char*)strrchr(fc->value(1),'/')+1);
+            GPrecisionType image_base_prec = gimp_drawable_precision (layers[0]);
+            int base_gray = gimp_drawable_gray (layers[0]);
+  
+***************
+*** 341,347 ****
+                      #endif
+                      gimp_image_add_layer (image_ID, layers[0], 0); DBG
+                      // set layer name to filename
+!                     gimp_layer_set_name(layers[0], strrchr(fc->value(i),'/')+1);
+  
+                      // searching max dimensions
+                      if (gimp_image_width(load_image_ID) > max_w)
+--- 341,347 ----
+                      #endif
+                      gimp_image_add_layer (image_ID, layers[0], 0); DBG
+                      // set layer name to filename
+!                     gimp_layer_set_name(layers[0], (char*)strrchr(fc->value(i),'/')+1);
+  
+                      // searching max dimensions
+                      if (gimp_image_width(load_image_ID) > max_w)
+*** plug-ins/icc_examin/icc_examin/icc_oyranos.h	Tue Apr 24 10:20:59 2007
+--- plug-ins/icc_examin/icc_examin/icc_oyranos.fix.h	Sun Mar 20 23:24:15 2011
+***************
+*** 35,40 ****
+--- 35,41 ----
+  #include "icc_vrml_parser.h"
+  
+  #include <string>
++ #include <string.h> // strcmp
+  #include <list>
+  #include <map>
+  class Oyranos;
+***************
+*** 146,153 ****
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int         byte,
+!                                   int         kanaele,
+                                    int         farb_intent,
+                                    const char* cmm, // 4 bytes 'lcms' 'APPL'
+                                    int         cmm_optionen); // BPC, precission
+--- 147,154 ----
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int,
+!                                   int,
+                                    int         farb_intent,
+                                    const char* cmm, // 4 bytes 'lcms' 'APPL'
+                                    int         cmm_optionen); // BPC, precission
+***************
+*** 156,163 ****
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int         byte,
+!                                   int         kanaele,
+                                    int         farb_intent,
+                                    const char* cmm, // 4 bytes 'lcms' 'APPL'
+                                    int         cmm_optionen,
+--- 157,164 ----
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int,
+!                                   int,
+                                    int         farb_intent,
+                                    const char* cmm, // 4 bytes 'lcms' 'APPL'
+                                    int         cmm_optionen,
+***************
+*** 167,174 ****
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int         byte,
+!                                   int         kanaele,
+                                    int         farb_intent,
+                                    const char* cmm, // 4 bytes 'lcms' 'APPL'
+                                    int         cmm_optionen,
+--- 168,175 ----
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int,
+!                                   int,
+                                    int         farb_intent,
+                                    const char* cmm, // 4 bytes 'lcms' 'APPL'
+                                    int         cmm_optionen,
+***************
+*** 185,192 ****
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int         byte,
+!                                   int         kanaele,
+                                    int         farb_intent,
+                                    int         cmm_optionen,
+                                    const char* simulations_profil,
+--- 186,193 ----
+                                    int         byte,
+                                    int         kanaele,
+                                    const char* ausgangs_profil__geraet,
+!                                   int,
+!                                   int,
+                                    int         farb_intent,
+                                    int         cmm_optionen,
+                                    const char* simulations_profil,
+*** plug-ins/icc_examin/icc_examin/icc_speicher.h	Wed Apr 25 07:36:35 2007
+--- plug-ins/icc_examin/icc_examin/icc_speicher.fix.h	Sun Mar 20 23:40:32 2011
+***************
+*** 33,38 ****
+--- 33,39 ----
+  
+  #include "icc_utils.h"
+  #include <string>
++ #include <stdlib.h> // free/memcpy/etc
+  
+  #define DBG_SPEICHER_START   if(icc_debug >= 3) DBG_PROG_START
+  #define DBG_SPEICHER_ENDE    if(icc_debug >= 3) DBG_PROG_ENDE

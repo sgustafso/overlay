@@ -1,0 +1,10 @@
+# ChangeLog for media-gfx/cinepaint
+# Copyright 2011 Stephen Gustafson; Distributed under the GPL v2
+# $Header: $
+
+*cinepaint-0.22.1 (23 Mar 2011)
+
+  23 Mar 2011; sgustafso(*at*)gmail(*dot*)com
+  +files/cinepaint-0.22-1.bugs.patch, +cinepaint-0.22.1.ebuild:
+  Initial ebuild; a little busted, but still ip...
+
