@@ -56,7 +56,6 @@ src_install () {
     if use examples; then
        dodir "${ANDROID_NDK_DIR}/samples" || die
        cp -pPR samples/* "${ED}${ANDROID_NDK_DIR}/samples" || die "Failed copying sample files"
-       doins samples || die
     fi
 
     fowners root:android "${ANDROID_NDK_DIR}/" || die

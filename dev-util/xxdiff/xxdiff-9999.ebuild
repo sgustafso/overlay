@@ -2,7 +2,7 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: /var/cvsroot/gentoo-x86/dev-util/xxdiff/Attic/xxdiff-3.2.ebuild,v 1.9 2008/03/18 19:57:26 armin76 dead $
 
-EAPI=2
+EAPI=3
 inherit distutils eutils mercurial
 
 EHG_REPO_URI="http://hg.furius.ca/public/xxdiff"

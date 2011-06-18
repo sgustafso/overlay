@@ -1,7 +1,7 @@
 # Copyright 2010 Stephen Gustafson
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=2
+EAPI=3
 inherit distutils eutils
 
 DESCRIPTION="Osh (Object SHell) is a tool that integrates the processing of structured data, database access, and remote access to a cluster of nodes."
